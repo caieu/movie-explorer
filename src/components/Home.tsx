@@ -13,8 +13,7 @@ export const Home = () => {
   const { searchMovies, loading: searchLoading } = useSearchMovies(query);
   const debouncedSetQuery = useDebouncedCallback(setQuery, 800);
 
-  const getMovies = useCallback((): Movie[] => {
-    console.log("movies");
+  const filterMovies = useCallback((): Movie[] => {
     let movies: Movie[] = [];
     if (!query && discoverMovies) {
       movies = discoverMovies;
@@ -25,11 +24,12 @@ export const Home = () => {
       rate === 0 ? true : movie.vote_average <= rate * 2
     );
   }, [discoverMovies, query, searchMovies, rate]);
+
   return (
     <div className="mb-auto">
       <Hero onSearch={debouncedSetQuery} />
       <RatingFilter onFilter={setRating} selected={rate} />
-      <MovieList movies={getMovies()} loading={loading || searchLoading} />
+      <MovieList movies={filterMovies()} loading={loading || searchLoading} />
     </div>
   );
 };
