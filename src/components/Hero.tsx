@@ -1,3 +1,5 @@
+import { Film } from "../icons/Film";
+
 interface HeroProps {
   onSearch: (text: string) => void;
 }
@@ -8,6 +10,10 @@ export const Hero = ({ onSearch }: HeroProps) => {
       className="h-52 md:h-96 bg-cover bg-no-repeat flex content-center backdrop-filter backdrop-opacity-80"
       style={{ backgroundImage: "url(/imgs/hero.png)" }}
     >
+      <div className="absolute flex space-x-4 py-6 pl-10">
+        <Film />
+        <div className="text-white font-bold">Movies</div>
+      </div>
       <div className="flex w-full justify-center bg-black bg-opacity-60">
         <input
           placeholder="Search for a movie..."
