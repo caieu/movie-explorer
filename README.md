@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-[Create React App](https://caieu-movie-explorer.herokuapp.com/)
+[Movie Explorer](https://caieu-movie-explorer.herokuapp.com/)
 
 ## Instalation
 

@@ -35,7 +35,10 @@ export const useSearchMovies = (query: string) => {
   const [searchMovies, setSearchMovies] = useState<Movie[] | undefined>();
   const [loading, setLoading] = useState<boolean>(false);
   useEffect(() => {
-    if (!query) return;
+    if (!query) {
+      setSearchMovies([])
+      return;
+    };
     async function get() {
       try {
         setLoading(true);

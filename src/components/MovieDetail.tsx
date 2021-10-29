@@ -20,7 +20,7 @@ export const MovieDetail = () => {
             <img
               src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
               alt={movie.title}
-              className="w-80 mx-auto rounded-lg"
+              className="w-64 md:w-80 mx-auto rounded-lg"
             />
             <div className="bg-white shadow overflow-hidden sm:rounded-lg w-full">
               <div className="px-4 py-5 sm:px-6">

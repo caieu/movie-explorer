@@ -11,7 +11,7 @@ export const Home = () => {
   const [rate, setRating] = useState(0);
   const { discoverMovies, loading } = usePopularMovies();
   const { searchMovies, loading: searchLoading } = useSearchMovies(query);
-  const debouncedSetQuery = useDebouncedCallback(setQuery, 800);
+  const debouncedSetQuery = useDebouncedCallback(setQuery, 500);
 
   const filterMovies = useCallback((): Movie[] => {
     let movies: Movie[] = [];
