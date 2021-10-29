@@ -60,14 +60,6 @@ export const MovieDetail = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="flex flex-col nmd:flex-row py-4 sm:py-5 sm:px-6">
-                    <div className="text-sm font-medium text-gray-500 w-28">
-                      Overview
-                    </div>
-                    <div className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                      {movie.overview}
-                    </div>
-                  </div>
                   {movie.homepage && (
                     <div className="flex flex-col md:flex-row py-4 sm:py-5 sm:px-6">
                       <div className="text-sm font-medium text-gray-500 w-28">
@@ -85,6 +77,14 @@ export const MovieDetail = () => {
                       </div>
                     </div>
                   )}
+                  <div className="flex flex-col nmd:flex-row py-4 sm:py-5 sm:px-6">
+                    <div className="text-sm font-medium text-gray-500 w-28">
+                      Overview
+                    </div>
+                    <div className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                      {movie.overview}
+                    </div>
+                  </div>
                 </dl>
               </div>
             </div>
