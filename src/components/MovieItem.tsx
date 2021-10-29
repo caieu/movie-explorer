@@ -13,7 +13,7 @@ export const MovieItem = ({ title, posterPath, id }: MovieItemProps) => {
         <img
           src={`https://image.tmdb.org/t/p/original${posterPath}`}
           alt={title}
-          className="w-40 cursor-pointer"
+          className="w-40 cursor-pointer rounded-lg"
         />
       ) : (
         <div className="bg-gray-400 w-40 h-full flex items-center justify-center p-2 cursor-pointer">

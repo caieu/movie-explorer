@@ -8,4 +8,5 @@ export type Movie = {
   overview?: string;
   homepage?: string;
   genres?: Genre[];
+  release_date?: string;
 };
