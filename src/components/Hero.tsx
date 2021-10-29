@@ -12,7 +12,7 @@ export const Hero = ({ onSearch }: HeroProps) => {
     >
       <div className="absolute flex space-x-4 py-6 pl-10">
         <Film />
-        <div className="text-white font-bold">Movies</div>
+        <div className="text-white font-bold">Movie Explorer</div>
       </div>
       <div className="flex w-full justify-center bg-black bg-opacity-60">
         <input

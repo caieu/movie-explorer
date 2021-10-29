@@ -6,7 +6,7 @@ export const Header = () => {
     <Link to="/">
       <div className="flex w-full bg-gray-700 pl-10 py-6 items-center space-x-4">
         <Film />
-        <div className="text-white font-bold">Movies</div>
+        <div className="text-white font-bold">Movie Explorer</div>
       </div>
     </Link>
   );
