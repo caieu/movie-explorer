@@ -21,6 +21,15 @@ export const MovieList = ({ movies, loading }: MovieListProps) => {
           <MovieItemSkeleton />
           <MovieItemSkeleton />
           <MovieItemSkeleton />
+          <MovieItemSkeleton />
+          <MovieItemSkeleton />
+          <MovieItemSkeleton />
+          <MovieItemSkeleton />
+          <MovieItemSkeleton />
+          <MovieItemSkeleton />
+          <MovieItemSkeleton />
+          <MovieItemSkeleton />
+          <MovieItemSkeleton />
         </>
       ) : (
         movies.map(({ title, poster_path, id }) => (

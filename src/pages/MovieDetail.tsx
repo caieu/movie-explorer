@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useGetMovieDetail } from "../api/moviedb";
 import { Genre } from "../types/Genre";
-import { Header } from "./Header";
-import { MovieDetailSkeleton } from "./MovieDetailSkeleton";
+import { Header } from "../components/Header";
+import { MovieDetailSkeleton } from "../components/MovieDetailSkeleton";
 
 type MovieDetailParams = {
   id: string;

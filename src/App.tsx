@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { Footer } from "./components/Footer";
-import { Home } from "./components/Home";
-import { MovieDetail } from "./components/MovieDetail";
+import { Home } from "./pages/Home";
+import { MovieDetail } from "./pages/MovieDetail";
 
 function App() {
   return (
